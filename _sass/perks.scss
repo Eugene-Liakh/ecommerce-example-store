@@ -1,0 +1,53 @@
+.perks {
+  background: radial-gradient(
+    78.01% 520.72% at 75.52% 36.33%,
+    rgba(230, 230, 230, 0.26) 0%,
+    #e6e6e6 100%
+  );
+  width: 100%;
+  height: max-content;
+
+  &__headline {
+    color: #000000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px4
+    line-height: 56px;
+    display: block;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  &__reasons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__reasons-card {
+    flex-basis: 1;
+    padding: 2rem;
+  }
+
+  &__reasons-card-image {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  &__reasons-card-headline {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #000000;
+  }
+
+  &__reasons-card-content-text {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    color: #000000;
+    padding-top: 1rem;
+  }
+}

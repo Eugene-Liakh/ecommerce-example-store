@@ -1,0 +1,15 @@
+.offer {
+  background: linear-gradient(90deg, #bc1111 0%, #eb3800 100%);
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  height: fit-content;
+}
+.offer h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3rem;
+}

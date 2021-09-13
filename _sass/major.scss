@@ -1,0 +1,63 @@
+.major {
+  background-color: #fbf8f3;
+  background: url(/assets/images/wording.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  width: 100wh;
+  height: fit-content;
+
+  &_wrapper-white {
+    display: flex;
+    justify-content: space-around;
+  }
+  &_text {
+    padding-bottom: 2rem;
+  }
+
+  &_text-span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    color: #828282;
+  }
+
+  &-button-blue {
+    text-decoration: none;
+    padding: 14px 24px;
+    margin-top: 700px;
+
+    color: #ffffff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 60px;
+    background: linear-gradient(90deg, #0987ce 0%, #0d5fbf 100%);
+    box-shadow: 0px 5px 13px rgba(51, 74, 67, 0.4);
+    border-radius: 4px;
+  }
+  &-button-blue:hover {
+    background: #54acfd;
+  }
+  &_image-wrapper {
+    align-self: flex-end;
+  }
+  &_image-product {
+    display: block;
+    height: 25rem;
+    padding: 0;
+    margin-left: 4%;
+  }
+}
+h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  color: #000000;
+  padding-top: 2rem;
+}

@@ -1,0 +1,121 @@
+.navigation {
+  background-color: $backgroundDarkColor;
+  color: $fontColor;
+  padding: 0;
+  margin: 0;
+  height: fit-content;
+
+  &_logo {
+    padding: 1rem;
+    position: absolute;
+  }
+  &_cart {
+    position: absolute;
+    margin-left: 95%;
+    margin-top: 0.25rem;
+    height: 40px;
+    width: 40px;
+  }
+  &_cart:hover {
+    border-radius: 50%;
+    border: 2px solid #54acfd;
+    box-sizing: border-box;
+  }
+
+  &-divider {
+    border-bottom: 1px solid grey;
+  }
+
+  &_timer {
+    display: inline-flex;
+  }
+
+  &_list {
+    display: inline-flex;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+      list-style: none;
+      padding: 0.5rem;
+    }
+    &-item a:hover {
+      color: #54acfd;
+    }
+  }
+  &_wrapper {
+    margin: auto;
+  }
+  &_text {
+    padding: 0.5rem;
+    font-family: Roboto;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    display: inline-flex;
+
+    &-span {
+      color: red;
+    }
+  }
+
+  &_button {
+    position: relative;
+    padding: 0.5rem;
+    border: 1px solid blue;
+    border-radius: 4px;
+    position: relative;
+    margin-left: 2rem;
+    left: 150px;
+  }
+
+  &_button:hover {
+    background-color: #54acfd;
+    box-shadow: 0px 5px 13px rgba(51, 74, 67, 0.4);
+    font-weight: 500;
+    box-sizing: border-box;
+  }
+}
+.navigation a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+#days {
+  margin-left: 0.5rem;
+  padding: 0.2rem;
+  background-color: #c6cbd2;
+  color: black;
+  font-weight: 700;
+  display: inline-block;
+  width: 3.5rem;
+}
+#hours {
+  margin-left: 0.4rem;
+  padding: 0.2rem;
+  background-color: #c6cbd2;
+  color: black;
+  font-weight: 700;
+  display: inline-block;
+  width: 5rem;
+}
+#minutes {
+  margin-left: 0.4rem;
+  padding: 0.2rem;
+  background-color: #c6cbd2;
+  color: black;
+  font-weight: 700;
+  display: inline-block;
+  width: 5rem;
+}
+#seconds {
+  margin-left: 0.4rem;
+  padding: 0.2rem;
+  background-color: #c6cbd2;
+  color: rgb(192, 0, 0);
+  font-weight: 700;
+  display: inline-block;
+  width: 5.5rem;
+}

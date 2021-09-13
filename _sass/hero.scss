@@ -1,0 +1,43 @@
+.hero {
+  background: url(/assets/images/hero.png);
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+
+  &_headline {
+    padding-top: 6rem;
+  }
+
+  &_wrapper {
+    margin-top: 1rem;
+    height: 10rem;
+    width: 30rem;
+  }
+
+  &_text {
+    font-size: 1rem;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  &_button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    display: inline-block;
+    position: relative;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    background-color: white;
+    color: #116abc;
+    text-decoration: none;
+  }
+  &_button:hover {
+    color: #ffffff;
+    background-color: #54acfd;
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.25);
+  }
+}

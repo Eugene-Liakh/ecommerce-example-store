@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      type="image/x-icon"
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico?"
+    />
+  </head>
+  <body>
+    {% include nav-bar.html %} {% include major.html %} {% include specs.html %}
+    {% include offer.html %} {% include hero.html %} {% include perks.html %} {%
+    include contacts.html %} {% include reviews.html %} {{ content }} {% include
+    footer.html %} {% include modal.html %}
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

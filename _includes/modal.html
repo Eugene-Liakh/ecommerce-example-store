@@ -1,0 +1,79 @@
+<div class="wrapper-for-modal">
+  <div class="modal">
+    <div class="modal__headline">
+      <a id="modal-close" href="#" class="close-icon">X</a>
+      <h3 class="modal__headline-text">Ваш заказ</h3>
+    </div>
+    <div class="modal__item">
+      <img class="modal__item-img" src="/assets/images/product.png" />
+      <p class="modal__item-text">Наушники AirPods Pro</p>
+      <span
+        class="modal__item-span-minus"
+        id="span-minus"
+        onclick="decrement()"
+      >
+        -
+      </span>
+      <input class="modal__item-input type="text" value="1" disabled
+      name="quantity" id="quantity">
+      <span class="modal__item-span-plus" id="span-plus" onclick="increment()">
+        +
+      </span>
+      <label for="quantity">1 799 грн.</label>
+    </div>
+    <div class="modal__final">
+      <p class="modal__final-string">
+        Итого: <span class="modal__final-span">1 799 грн.</span>
+      </p>
+    </div>
+    <div class="modal__form">
+      <form>
+        <div class="modal__form-info">
+          <div class="modal__form-info-name">
+            <input type="text" required name="client-name" />
+            <label for="client-name">Имя</label>
+          </div>
+          <div class="modal__form-info-surname">
+            <input type="text" required name="client-surname" />
+            <label for="client-surname">Фамилия</label>
+          </div>
+          <div>
+            <input
+              type="text"
+              class="modal__form-info-phone"
+              required
+              name="client-phone"
+            />
+            <label for="client-phone">Номер телефона</label>
+          </div>
+          <div>
+            <input
+              type="text"
+              class="modal__form-info-city"
+              required
+              name="client-city"
+            />
+            <label for="client-city">Город</label>
+          </div>
+          <div>
+            <input
+              type="text"
+              class="modal__form-info-post"
+              required
+              name="client-nova-post"
+            />
+            <label for="client-nova-post">Номер отделения новой почты</label>
+          </div>
+          <div>
+            <textarea
+              name="textarea"
+              class="modal__form-info-textarea"
+            ></textarea>
+            <label for="textarea">Комментарий к заказу</label>
+          </div>
+        </div>
+        <button class="modal__form-button" type="submit">Оформить заказ</button>
+      </form>
+    </div>
+  </div>
+</div>
