@@ -72,7 +72,14 @@
             <label for="textarea">Комментарий к заказу</label>
           </div>
         </div>
-        <button class="modal__form-button" type="submit">Оформить заказ</button>
+        <button
+          class="modal__form-button"
+          type="submit"
+          onsubmit="preventDefault()"
+          onclick="placeOrder()"
+        >
+          Оформить заказ
+        </button>
       </form>
     </div>
   </div>
