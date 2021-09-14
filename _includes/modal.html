@@ -4,6 +4,7 @@
       <a id="modal-close" href="#" class="close-icon">X</a>
       <h3 class="modal__headline-text">Ваш заказ</h3>
     </div>
+
     <div class="modal__item">
       <img class="modal__item-img" src="/assets/images/product.png" />
       <p class="modal__item-text">Наушники AirPods Pro</p>
@@ -27,7 +28,7 @@
       </p>
     </div>
     <div class="modal__form">
-      <form>
+      <form action="http://foo.com">
         <div class="modal__form-info">
           <div class="modal__form-info-name">
             <input type="text" required name="client-name" />
@@ -72,14 +73,7 @@
             <label for="textarea">Комментарий к заказу</label>
           </div>
         </div>
-        <button
-          class="modal__form-button"
-          type="submit"
-          onsubmit="preventDefault()"
-          onclick="placeOrder()"
-        >
-          Оформить заказ
-        </button>
+        <button class="modal__form-button" type="submit">Оформить заказ</button>
       </form>
     </div>
   </div>
