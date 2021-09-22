@@ -15,8 +15,8 @@
       >
         -
       </span>
-      <input class="modal__item-input type="text" value="1" disabled
-      name="quantity" id="quantity">
+      <input class="modal__item-input" type="text" value="1" disabled
+      name="quantity" id="quantity" >
       <span class="modal__item-span-plus" id="span-plus" onclick="increment()">
         +
       </span>
@@ -31,11 +31,11 @@
       <form action="http://foo.com">
         <div class="modal__form-info">
           <div class="modal__form-info-name">
-            <input type="text" required name="client-name" />
+            <input type="text" required id="client-name" />
             <label for="client-name">Имя</label>
           </div>
           <div class="modal__form-info-surname">
-            <input type="text" required name="client-surname" />
+            <input type="text" required id="client-surname" />
             <label for="client-surname">Фамилия</label>
           </div>
           <div>
@@ -43,7 +43,7 @@
               type="text"
               class="modal__form-info-phone"
               required
-              name="client-phone"
+              id="client-phone"
             />
             <label for="client-phone">Номер телефона</label>
           </div>
@@ -52,7 +52,7 @@
               type="text"
               class="modal__form-info-city"
               required
-              name="client-city"
+              id="client-city"
             />
             <label for="client-city">Город</label>
           </div>
@@ -61,13 +61,13 @@
               type="text"
               class="modal__form-info-post"
               required
-              name="client-nova-post"
+              id="client-nova-post"
             />
             <label for="client-nova-post">Номер отделения новой почты</label>
           </div>
           <div>
             <textarea
-              name="textarea"
+              id="textarea"
               class="modal__form-info-textarea"
             ></textarea>
             <label for="textarea">Комментарий к заказу</label>

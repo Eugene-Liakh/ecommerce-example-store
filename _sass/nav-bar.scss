@@ -31,10 +31,9 @@
   }
 
   &_list {
-    display: inline-flex;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     &-item {
       list-style: none;
@@ -53,10 +52,13 @@
     font-size: 1rem;
     line-height: 2rem;
     font-weight: 400;
-    display: inline-flex;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 
     &-span {
       color: red;
+      margin-left: 6px;
     }
   }
 
@@ -65,7 +67,6 @@
     padding: 0.5rem;
     border: 1px solid blue;
     border-radius: 4px;
-    position: relative;
     margin-left: 2rem;
     left: 150px;
   }
@@ -90,7 +91,7 @@
   color: black;
   font-weight: 700;
   display: inline-block;
-  width: 3.5rem;
+  width: 4rem;
 }
 #hours {
   margin-left: 0.4rem;
@@ -118,4 +119,45 @@
   font-weight: 700;
   display: inline-block;
   width: 5.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .navigation {
+    &_button {
+      display: none;
+    }
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    height: max-content;
+    padding-top: 10px;
+
+    &-divider {
+      display: none;
+    }
+
+    &_wrapper {
+      display: none;
+    }
+    &_text {
+      margin-left: 15%;
+      display: flex;
+      flex-shrink: 2;
+      align-items: center;
+    }
+    &_text-span {
+      display: inline-block;
+      }
+
+    &_timer > * {
+      height: max-content;
+    }
+    &_button {
+      display: none;
+    }
+    &_cart {
+      display: none;
+    }
+  }
 }

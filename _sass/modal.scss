@@ -61,7 +61,7 @@
     }
     &-span-minus,
     &-span-plus {
-      font-size: larger;
+      font-size: 2rem;
       font-weight: 700;
     }
   }
@@ -129,4 +129,9 @@
   background-color: rgba(0, 0, 0, 0.75);
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 70vw;
+  }
 }

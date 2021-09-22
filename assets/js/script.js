@@ -17,7 +17,7 @@ var x = setInterval(function () {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Output the result in an element with id="demo"
-  document.getElementById("days").innerHTML = days + " дней ";
+  document.getElementById("days").innerHTML = days + " день ";
 
   document.getElementById("hours").innerHTML = hours + " часов ";
 
@@ -31,3 +31,43 @@ var x = setInterval(function () {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+const buyBtn = document.querySelectorAll(".buy-button");
+const modal = document.querySelector(".modal")
+const modalWrap = document.querySelector(".wrapper-for-modal")
+const modalClose = document.getElementById("modal-close");
+
+buyBtn.forEach((e) => {
+  e.addEventListener("click", function() {
+    console.log("CLICK!!")
+    modalWrap.style.display = "flex";
+    modal.style.display = "block";
+  })
+});
+modalClose.addEventListener("click", () => {
+  modalWrap.style.display = "none";
+  modal.style.display = "none";
+});
+
+const minusItem = document.getElementById("span-minus");
+const plusItem = document.getElementById("span-plus")
+const itemQuantity = document.getElementById("quantity");
+const finalPrice = document.querySelector(".modal__final-span");
+
+function increment() {
+  let finalized = Number (itemQuantity.value);
+  if (finalized >= 1 ) {
+    finalized += 1;
+    itemQuantity.value = finalized;
+    finalPrice.innerHTML = finalized * 1799;
+    finalPrice.style.fontWeight = "800";
+  }
+}
+function decrement() {
+  let finalized = Number (itemQuantity.value);
+  if (finalized >= 2 ) {
+    finalized -= 1;
+    itemQuantity.value = finalized;
+    finalPrice.innerHTML = finalized * 1799;
+  }
+}
