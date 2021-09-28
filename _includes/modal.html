@@ -15,8 +15,17 @@
       >
         -
       </span>
-      <input class="modal__item-input" type="text" value="1" disabled
-      name="quantity" id="quantity" >
+      <fieldset form="my-order">
+        <input
+          class="modal__item-input"
+          type="text"
+          value="1"
+          disabled
+          name="quantity"
+          id="quantity"
+        />
+      </fieldset>
+
       <span class="modal__item-span-plus" id="span-plus" onclick="increment()">
         +
       </span>
@@ -24,11 +33,12 @@
     </div>
     <div class="modal__final">
       <p class="modal__final-string">
-        Итого: <span class="modal__final-span">1 799 грн.</span>
+        Итого:
+        <span class="modal__final-span">1 799 грн.</span>
       </p>
     </div>
     <div class="modal__form">
-      <form action="http://foo.com">
+      <form id="new-order" name="order-details" data-netlify="true">
         <div class="modal__form-info">
           <div class="modal__form-info-name">
             <input type="text" required id="client-name" />

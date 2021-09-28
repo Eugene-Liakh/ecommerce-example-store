@@ -3,3 +3,8 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+.idea/.name
+.idea/workspace.xml
+.gitignore
+.idea/workspace.xml
+.DS_Store
