@@ -59,7 +59,7 @@ function increment() {
   if (finalized >= 1) {
     finalized += 1;
     itemQuantity.value = finalized;
-    finalPrice.innerHTML = finalized * 1799 + "грн";
+    finalPrice.innerHTML = finalized * 1799 + " грн";
     finalPrice.style.fontWeight = "800";
   }
 }
@@ -68,6 +68,6 @@ function decrement() {
   if (finalized >= 2) {
     finalized -= 1;
     itemQuantity.value = finalized;
-    finalPrice.innerHTML = finalized * 1799 + "грн";
+    finalPrice.innerHTML = finalized * 1799 + " грн";
   }
 }
