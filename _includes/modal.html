@@ -17,6 +17,7 @@
       </span>
       <fieldset form="my-order">
         <input
+          name="number-of-items"
           class="modal__item-input"
           type="text"
           value="1"
@@ -41,15 +42,16 @@
       <form id="new-order" name="order-details" data-netlify="true">
         <div class="modal__form-info">
           <div class="modal__form-info-name">
-            <input type="text" required id="client-name" />
+            <input name="name" type="text" required id="client-name" />
             <label for="client-name">Имя</label>
           </div>
           <div class="modal__form-info-surname">
-            <input type="text" required id="client-surname" />
+            <input name="surname" type="text" required id="client-surname" />
             <label for="client-surname">Фамилия</label>
           </div>
           <div>
             <input
+              name="phone-number"
               type="text"
               class="modal__form-info-phone"
               required
@@ -59,6 +61,7 @@
           </div>
           <div>
             <input
+              name="location"
               type="text"
               class="modal__form-info-city"
               required
@@ -68,6 +71,7 @@
           </div>
           <div>
             <input
+              name="nova-post-numb"
               type="text"
               class="modal__form-info-post"
               required
@@ -77,6 +81,7 @@
           </div>
           <div>
             <textarea
+              name="comment-from-client"
               id="textarea"
               class="modal__form-info-textarea"
             ></textarea>
