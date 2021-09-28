@@ -33,16 +33,16 @@ var x = setInterval(function () {
 }, 1000);
 
 const buyBtn = document.querySelectorAll(".buy-button");
-const modal = document.querySelector(".modal")
-const modalWrap = document.querySelector(".wrapper-for-modal")
+const modal = document.querySelector(".modal");
+const modalWrap = document.querySelector(".wrapper-for-modal");
 const modalClose = document.getElementById("modal-close");
 
 buyBtn.forEach((e) => {
-  e.addEventListener("click", function() {
-    console.log("CLICK!!")
+  e.addEventListener("click", function () {
+    console.log("CLICK!!");
     modalWrap.style.display = "flex";
     modal.style.display = "block";
-  })
+  });
 });
 modalClose.addEventListener("click", () => {
   modalWrap.style.display = "none";
@@ -50,24 +50,24 @@ modalClose.addEventListener("click", () => {
 });
 
 const minusItem = document.getElementById("span-minus");
-const plusItem = document.getElementById("span-plus")
+const plusItem = document.getElementById("span-plus");
 const itemQuantity = document.getElementById("quantity");
 const finalPrice = document.querySelector(".modal__final-span");
 
 function increment() {
-  let finalized = Number (itemQuantity.value);
-  if (finalized >= 1 ) {
+  let finalized = Number(itemQuantity.value);
+  if (finalized >= 1) {
     finalized += 1;
     itemQuantity.value = finalized;
-    finalPrice.innerHTML = finalized * 1799;
+    finalPrice.innerHTML = finalized * 1799 + "грн";
     finalPrice.style.fontWeight = "800";
   }
 }
 function decrement() {
-  let finalized = Number (itemQuantity.value);
-  if (finalized >= 2 ) {
+  let finalized = Number(itemQuantity.value);
+  if (finalized >= 2) {
     finalized -= 1;
     itemQuantity.value = finalized;
-    finalPrice.innerHTML = finalized * 1799;
+    finalPrice.innerHTML = finalized * 1799 + "грн";
   }
 }
