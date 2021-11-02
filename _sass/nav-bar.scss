@@ -69,11 +69,12 @@
     border-radius: 4px;
     margin-left: 2rem;
     left: 150px;
+    font-weight: 500;
   }
 
   &_button:hover {
     background-color: #54acfd;
-    box-shadow: 0px 5px 13px rgba(51, 74, 67, 0.4);
+    box-shadow: 0 5px 13px rgba(51, 74, 67, 0.4);
     font-weight: 500;
     box-sizing: border-box;
   }
